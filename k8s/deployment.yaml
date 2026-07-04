@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: tamilnadu-tourism
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: tamilnadu-tourism
+
+  template:
+    metadata:
+      labels:
+        app: tamilnadu-tourism
+
+    spec:
+      containers:
+      - name: tamilnadu-tourism
+        image: tamilnadu-tourism:latest
+        imagePullPolicy: Never
+
+        ports:
+        - containerPort: 80
