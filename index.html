@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tamil Nadu Tourism</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+    <img src="images/hero1.jpg">
+    <img src="data:image/jpeg;base64,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" >
+</head>
+
+<body>
+
+<!-- ===========================
+        NAVBAR
+=========================== -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="data:image/jpeg;base64,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">
+
+            <div class="logo-text">
+
+                <h2>TAMIL NADU</h2>
+
+                <span>Where Stories Never End</span>
+
+            </div>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li><a href="attractions.html">Attractions</a></li>
+
+            <li><a href="hotels.html">Hotels</a></li>
+
+            <li><a href="travel-guides.html">Travel Guides</a></li>
+
+            <li><a href="maps.html">Maps</a></li>
+
+            <li><a href="booking.html">Booking</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <button id="searchBtn">
+
+                <i class="fas fa-search"></i>
+
+            </button>
+
+            <button id="loginBtn">
+
+                <i class="fas fa-user"></i>
+
+            </button>
+
+        </div>
+
+        <div class="menu-btn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ===========================
+        HERO SECTION
+=========================== -->
+
+<section class="hero">
+
+    <div class="slider">
+
+        <img src="images/hero1.jpg" class="slide active" alt="Hero 1">
+
+        <img src="images/hero2.jpg" class="slide" alt="Hero 2">
+
+        <img src="images/hero3.jpg" class="slide" alt="Hero 3">
+
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="tagline">
+            ✨ EXPLORE TAMIL NADU
+        </span>
+
+        <h1>
+
+            Discover the
+
+            <span>Timeless Beauty</span>
+
+            of Tamil Nadu
+
+        </h1>
+
+        <p>
+
+            From ancient temples and heritage monuments to
+            breathtaking hill stations, waterfalls and beaches,
+            Tamil Nadu offers unforgettable experiences for every traveler.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="attractions.html" class="btn explore-btn">
+
+                Explore Now
+
+                <i class="fas fa-arrow-right"></i>
+
+            </a>
+
+            <a href="booking.html" class="btn book-btn">
+
+                Book Trip
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Slider Navigation -->
+
+    <div class="slider-controls">
+
+        <span class="dot active"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+      POPULAR DESTINATIONS
+=========================== -->
+
+<section class="destinations">
+
+    <div class="section-title">
+
+        <h4>EXPLORE TAMIL NADU</h4>
+
+        <h2>Popular Destinations</h2>
+
+        <p>
+            Discover breathtaking hill stations, ancient temples,
+            peaceful beaches and vibrant cultural cities.
+        </p>
+
+    </div>
+
+    <div class="destination-grid">
+
+        <!-- Card 1 -->
+
+        <div class="card">
+
+            <img src="images/ooty.jpg" alt="Ooty">
+
+            <div class="card-content">
+
+                <h3>Ooty</h3>
+
+                <p>
+                    Queen of Hill Stations with tea gardens,
+                    lakes and pleasant climate.
+                </p>
+
+                <a href="attractions.html">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="card">
+
+            <img src="images/kodai.jpg" alt="Kodaikanal">
+
+            <div class="card-content">
+
+                <h3>Kodaikanal</h3>
+
+                <p>
+                    Beautiful valleys, waterfalls and scenic
+                    viewpoints for every traveller.
+                </p>
+
+                <a href="attractions.html">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="card">
+
+            <img src="images/madurai.jpg" alt="Madurai">
+
+            <div class="card-content">
+
+                <h3>Madurai</h3>
+
+                <p>
+                    Home to the magnificent
+                    Meenakshi Amman Temple and rich heritage.
+                </p>
+
+                <a href="attractions.html">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="card">
+
+            <img src="images/mahabalipuram.jpg" alt="Mahabalipuram">
+
+            <div class="card-content">
+
+                <h3>Mahabalipuram</h3>
+
+                <p>
+                    UNESCO heritage monuments,
+                    beaches and rock-cut architecture.
+                </p>
+
+                <a href="attractions.html">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 5 -->
+
+        <div class="card">
+
+            <img src="images/rameswaram.jpg" alt="Rameswaram">
+
+            <div class="card-content">
+
+                <h3>Rameswaram</h3>
+
+                <p>
+                    Sacred island town famous for temples,
+                    beaches and Pamban Bridge.
+                </p>
+
+                <a href="attractions.html">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 6 -->
+
+        <div class="card">
+
+            <img src="images/kanyakumari.jpg" alt="Kanyakumari">
+
+            <div class="card-content">
+
+                <h3>Kanyakumari</h3>
+
+                <p>
+                    Witness spectacular sunrise and sunset
+                    where three seas meet.
+                </p>
+
+                <a href="attractions.html">
+                    Explore
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="destination-btn">
+
+        <a href="attractions.html" class="view-btn">
+
+            View All Destinations
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+<!-- ===========================
+      FEATURED EXPERIENCES
+=========================== -->
+
+<section class="experiences">
+
+    <div class="section-title">
+
+        <h4>UNFORGETTABLE EXPERIENCES</h4>
+
+        <h2>Things To Do</h2>
+
+        <p>
+            Explore adventure, culture, nature and spirituality
+            across Tamil Nadu.
+        </p>
+
+    </div>
+
+    <div class="experience-container">
+
+        <div class="experience-card">
+
+            <i class="fas fa-mountain"></i>
+
+            <h3>Hill Stations</h3>
+
+            <p>
+                Visit Ooty, Kodaikanal and Yercaud for cool weather,
+                lakes and scenic beauty.
+            </p>
+
+            <a href="attractions.html">Read More</a>
+
+        </div>
+
+        <div class="experience-card">
+
+            <i class="fas fa-place-of-worship"></i>
+
+            <h3>Temple Tours</h3>
+
+            <p>
+                Discover the architectural wonders of Madurai,
+                Rameswaram and Chidambaram.
+            </p>
+
+            <a href="attractions.html">Read More</a>
+
+        </div>
+
+        <div class="experience-card">
+
+            <i class="fas fa-water"></i>
+
+            <h3>Beach Escape</h3>
+
+            <p>
+                Relax at Marina Beach, Mahabalipuram and
+                Kanyakumari while enjoying beautiful sunsets.
+            </p>
+
+            <a href="attractions.html">Read More</a>
+
+        </div>
+
+        <div class="experience-card">
+
+            <i class="fas fa-camera"></i>
+
+            <h3>Photography</h3>
+
+            <p>
+                Capture waterfalls, wildlife, monuments
+                and breathtaking landscapes.
+            </p>
+
+            <a href="gallery.html">Read More</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+      TRAVEL PACKAGES
+=========================== -->
+
+<section class="packages">
+
+    <div class="section-title">
+
+        <h4>BEST OFFERS</h4>
+
+        <h2>Popular Tour Packages</h2>
+
+    </div>
+
+    <div class="package-grid">
+
+        <div class="package-card">
+
+            <img src="images/ooty.jpg" alt="Hill Tour">
+
+            <div class="package-content">
+
+                <h3>Hill Station Tour</h3>
+
+                <p>3 Days • Ooty • Kodaikanal</p>
+
+                <h4>₹7,999</h4>
+
+                <a href="booking.html" class="package-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="package-card">
+
+            <img src="images/madurai.jpg" alt="Temple Tour">
+
+            <div class="package-content">
+
+                <h3>Temple Heritage Tour</h3>
+
+                <p>4 Days • Madurai • Rameswaram</p>
+
+                <h4>₹9,999</h4>
+
+                <a href="booking.html" class="package-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="package-card">
+
+            <img src="images/kanyakumari.jpg" alt="Beach Tour">
+
+            <div class="package-content">
+
+                <h3>Beach Paradise</h3>
+
+                <p>3 Days • Mahabalipuram • Kanyakumari</p>
+
+                <h4>₹8,499</h4>
+
+                <a href="booking.html" class="package-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+      TESTIMONIALS
+=========================== -->
+
+<section class="testimonials">
+
+    <div class="section-title">
+
+        <h4>HAPPY TRAVELLERS</h4>
+
+        <h2>What Our Visitors Say</h2>
+
+    </div>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+
+            <img src="images/user1.jpg" alt="User">
+
+            <h3>Priya</h3>
+
+            <p>
+                "Tamil Nadu is one of the most beautiful places I've ever
+                visited. The temples and hill stations were amazing."
+            </p>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <img src="images/user2.jpg" alt="User">
+
+            <h3>Rahul</h3>
+
+            <p>
+                "Excellent travel experience with beautiful beaches,
+                delicious food and friendly people."
+            </p>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <img src="images/user3.jpg" alt="User">
+
+            <h3>Ananya</h3>
+
+            <p>
+                "Loved every destination. Ooty and Kodaikanal were my
+                favourites."
+            </p>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+      NEWSLETTER
+=========================== -->
+
+<section class="newsletter">
+
+    <h2>Stay Updated</h2>
+
+    <p>Subscribe for travel offers and destination updates.</p>
+
+    <form id="newsletterForm">
+
+        <input
+            type="email"
+            placeholder="Enter your Email"
+            required>
+
+        <button type="submit">
+            Subscribe
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ===========================
+      FOOTER
+=========================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <h2>Tamil Nadu Tourism</h2>
+
+            <p>
+                Discover the beauty of Tamil Nadu through
+                unforgettable journeys, culture and heritage.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="attractions.html">Attractions</a></li>
+
+                <li><a href="hotels.html">Hotels</a></li>
+
+                <li><a href="booking.html">Booking</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h3>Follow Us</h3>
+
+            <a href="#"><i class="fab fa-facebook"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Tamil Nadu Tourism | All Rights Reserved
+    </p>
+
+</footer>
+
+<!-- JavaScript -->
+
+<script src="js/navigation.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/search.js"></script>
+<script src="js/booking.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
